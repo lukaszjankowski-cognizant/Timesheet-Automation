@@ -1,9 +1,16 @@
 ///<reference types="cypress" />
 
 
-describe('Screenshort grabber', () => {
-    it('first test', () => {
-        cy.visit('/', {timeout: 90000})
-        cy.get('#i0116')
+describe('Skip login', () => {
+  it('timesheet attack',() => {
+    cy.visit('https://onecognizant.cognizant.com', {
+      onBeforeLoad(win) {
+        cy.stub(win, 'open')
+      }
     });
+    cy.contains('View Timesheet').click({waitForAnimations: false})
+    cy.window().its('open').should('be.called');
+    cy.wait(25000)
+    cy.contains('[class="ps_box-link timesheet_period"]').click()
+  });
 });
