@@ -1,16 +1,10 @@
 ///<reference types="cypress" />
 
 
-describe('Skip login', () => {
-  it('timesheet attack',() => {
-    cy.visit('https://onecognizant.cognizant.com', {
-      onBeforeLoad(win) {
-        cy.stub(win, 'open')
-      }
-    });
-    cy.contains('View Timesheet').click({waitForAnimations: false})
-    cy.window().its('open').should('be.called');
-    cy.wait(25000)
-    cy.contains('[class="ps_box-link timesheet_period"]').click()
-  });
+describe('skipping loging', () => {
+  it('Attack the timesheet',() => {
+    cy.visit('https://onecognizant.cognizant.com');
+    cy.contains('View Timesheet', {timeout: 10000}).click();
+    cy.contains('Timesheet Summary', {timeout: 6000}).should('be.visible');
+  });  
 });
