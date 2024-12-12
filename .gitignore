@@ -1,1 +1,12 @@
 cypress.env.json
+node_modules/
+package-lock.json
+package.json
+cypress/fixtures/
+cypress/e2e/1-getting-started/
+cypress/e2e/2-advanced-examples/
+cypress/e2e/3-other/
+cypress/e2e/screenshots-natalia2.spec.js
+cypress/e2e/screenshots-easysunday.spec.js
+cypress.e2e/screenshots-nata.spec.js
+cypress/e2e/screenshots.spec.js
