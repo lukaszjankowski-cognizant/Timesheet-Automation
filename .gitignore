@@ -9,4 +9,4 @@ cypress/e2e/3-other/
 cypress/e2e/screenshots-natalia2.spec.js
 cypress/e2e/screenshots-easysunday.spec.js
 cypress.e2e/screenshots-nata.spec.js
-cypress/e2e/screenshots.spec.js
+cypress.e2e/screenshots-AAD.spec.js
