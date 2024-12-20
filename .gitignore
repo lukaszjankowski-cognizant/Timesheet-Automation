@@ -6,7 +6,3 @@ cypress/fixtures/
 cypress/e2e/1-getting-started/
 cypress/e2e/2-advanced-examples/
 cypress/e2e/3-other/
-openCE.spec.js
-visitCompassEsa.spec.js
-visitCompassEsaChrome.spec.js
-
